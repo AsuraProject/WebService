@@ -1,0 +1,105 @@
+/* Copyright 2017 Yuri Faria
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License. */
+
+/* Header */
+
+header.custom-header {
+  background: white;
+}
+
+.custom-header .mdl-layout-title {
+	color: black;
+	font-family: Raleway;
+}
+
+.custom-header a.mdl-navigation__link {
+  color: black;
+}
+
+.custom-header .mdl-textfield__input {
+    border-bottom: 1px solid black;
+    color: black;
+}
+
+.custom-header .mdl-textfield__label {
+	color: black;
+}
+
+/* Grid */
+
+.mdl-cell {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.mdl-grid .mdl-textfield__input {
+	border-bottom: 1px solid black;
+}
+
+.mdl-grid .mdl-textfield__label {
+	color: black;
+}
+
+/* Other class */
+
+.error-message{
+	display: none;
+}
+
+.custom-buttom{
+	background: rgb(255, 255, 255);
+	border: 0px solid rgba(0, 0, 0, 0);
+	width: 300px;
+}
+
+.drawer-search--input{
+	display: inline;
+}
+
+.material-icons{
+	color: black;
+}
+
+#upload-link{
+	display: none;
+}
+
+#uploadGo{
+	display: none;
+}
+
+#log-in-link{
+	display: none;
+}
+
+.material-icons.md-36{
+	font-size: 36px; 
+}
+
+.material-icons.black {
+	color: black;
+}
+
+#showMoreButton{
+	display: none;
+}
+
+input[type=file]{
+	display: none;
+}
+
+a{
+	text-decoration: none;
+}
