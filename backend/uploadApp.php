@@ -14,6 +14,7 @@
 	limitations under the License. */
 
 	require_once ("databaseClass.php");
+	session_start();
 
 	class uploadApp{
 		private $appName;
@@ -27,7 +28,7 @@
 		function __construct(){
 			$this->appName = $_REQUEST['name'];
 			$this->appDescription = $_REQUEST['description'];
-			$this->appCreator = $_REQUEST['creator'];
+			$this->appCreator = $_SESSION['USERNAME'];
 			$this->imgFile = $_FILES['img'];
 			$this->appFile = $_FILES['app'];
 
@@ -66,5 +67,7 @@
 		}
 	}
 
-	$uploadApp = new uploadApp(file_get_contents('php://input'));
+	if(isset($_SESSION['CONNECTED'])){
+		$uploadApp = new uploadApp(file_get_contents('php://input'));
+	}
 ?>
