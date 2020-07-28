@@ -107,6 +107,13 @@ document.addEventListener('DOMContentLoaded', function(){
 
 			httpConnection.open("POST", "../backend/createAccount.php", true);
     		httpConnection.send(json);
+
+			httpConnection.onreadystatechange = function() { 
+    			if(httpConnection.readyState == 4 && httpConnection.status == 200) {
+					window.location.href = '../index.html';
+        		}
+    		}
+
 		}
 
 		this.main();

@@ -12,7 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-function getApps(){
+function getApps(typeReq = '..'){
 	this.quantity = 10;
 	this.startPosition = 0;
 	this.order = 'new';
@@ -54,7 +54,7 @@ function getApps(){
 
 		var httpConnection = new XMLHttpRequest();
 
-		httpConnection.open("POST", "../backend/getAppsAPI.php", true);
+		httpConnection.open("POST", typeReq + "/backend/getAppsAPI.php", true);
 
 		httpConnection.onreadystatechange = function() { 
 			if(httpConnection.readyState == 4 && httpConnection.status == 200) {

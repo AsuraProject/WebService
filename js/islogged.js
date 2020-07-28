@@ -12,14 +12,14 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-function isLogged(){
+function isLogged(typeReq = '..'){
 	this.username;
 
 	this.main = function(){
 		var thisVar = this;
 		var httpConnection = new XMLHttpRequest();
 
-		httpConnection.open("POST", "../backend/isLogged.php", true);
+		httpConnection.open("POST", typeReq + "/backend/isLogged.php", true);
 
 		httpConnection.onreadystatechange = function() { 
 			if(httpConnection.readyState == 4 && httpConnection.status == 200) {
@@ -42,7 +42,7 @@ function isLogged(){
 		var thisVar = this;
 		var httpConnection = new XMLHttpRequest();
 
-		httpConnection.open("POST", "../getUser.php", true);
+		httpConnection.open("POST", typeReq + "/backend/getUser.php", true);
 
 		httpConnection.onreadystatechange = function() { 
 			if(httpConnection.readyState == 4 && httpConnection.status == 200) {

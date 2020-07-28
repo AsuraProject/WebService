@@ -12,7 +12,7 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License. */
 
-isLogged = new isLogged();
+isLogged = new isLogged('.');
 isLogged.onLogged = function(){
 	document.getElementById('log-in-link').style['display'] = "none";
  	document.getElementById('sign-in-link').style['display'] = "none";
@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	function feed(){
 		this.initialStart = 0;
-		this.apps = new getApps();
+		this.apps = new getApps('.');
 
 		this.main = function(){
 			var thisVar = this;

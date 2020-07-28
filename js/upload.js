@@ -125,6 +125,7 @@ document.addEventListener('DOMContentLoaded', function(){
 				if (this.status == 200){
 					if(this.response){
 						console.log("All right");
+						window.location.href = "../index.html";
 					}else{
 						document.getElementById('upload-progress').style['display'] = "none";
 						document.getElementById('uploadGo').style['display'] = "block";
